@@ -1,4 +1,3 @@
-
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { MockLLMResponse } from '@/types/workflow';
 
@@ -7,8 +6,7 @@ class GeminiService {
   private model: any;
 
   constructor() {
-    // You'll need to add your Gemini API key here
-    const apiKey = 'your-gemini-api-key';
+    const apiKey = 'AIzaSyDqKO0JciI4Obgb6Eh50Ax4s1kJhCv51rE';
     this.genAI = new GoogleGenerativeAI(apiKey);
     this.model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });
   }
